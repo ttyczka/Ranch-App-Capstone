@@ -1,25 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using RanchApp.ViewModels;
+using System.ComponentModel;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
-namespace RanchApp
+namespace RanchApp.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WorkWithAnimals : ContentPage
+    public partial class WorkWithAnimalsPage : ContentPage
     {
-        public static Page GetWorkWithAnimalsPage()
+        public WorkWithAnimalsPage()
         {
-            return new ContentPage
-            {
-               
-            };
+            InitializeComponent();
+            BindingContext = new ItemDetailViewModel();
         }
-
-        
     }
 }

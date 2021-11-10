@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RanchApp.WorkWithAnimals">
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RanchApp.Views.WorkWithAnimalsPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Padding="10,20">
-            <StackLayout Orientation="Horizontal">
+            <StackLayout>
                 <Label Text="Name:"></Label>
                 <Label Text="PRODUCT NAME"></Label>
             </StackLayout>
@@ -14,8 +17,7 @@
                 <Label Text="PRODUCT DESCRIPTIONPRODUCT DESCRIPTIONPRODUCT DESCRIPTIONPRODUCT DESCRIPTIONPRODUCT DESCRIPTIONPRODUCT DESCRIPTION"></Label>
             </StackLayout>
 
-            <Image Source="https://hplussport.com/wp-content/uploads/2016/12/v-neck-T-shirt-for-women_LYNDA_29948.jpg" Aspect="AspectFit" HorizontalOptions="FillAndExpand"
-                   VerticalOptions="Start"></Image>
+            
             <RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
                 <Button Text="Order" x:Name="orderBtn"
                         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.25}"
@@ -26,4 +28,5 @@
             </RelativeLayout>
         </StackLayout>
     </ContentPage.Content>
+
 </ContentPage>

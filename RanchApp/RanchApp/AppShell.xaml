@@ -83,17 +83,18 @@
     </FlyoutItem>
     
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
-    <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+
+    <MenuItem Text="Login" StyleClass="MenuItemLayoutStyle" Clicked="OnLoginMenuItemClicked">
     </MenuItem>
-    <MenuItem Text="Work With Animals" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    <MenuItem Text="Work With Animals" StyleClass="MenuItemLayoutStyle" Clicked="OnWorkWithAnimalsMenuItemClicked">
     </MenuItem>
-    <MenuItem Text="Who Has Been Fed" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    <MenuItem Text="Who Has Been Fed" StyleClass="MenuItemLayoutStyle" Clicked="OnWhoHasBeenFedClicked">
     </MenuItem>
-    <MenuItem Text="Animals" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    <MenuItem Text="Animals" StyleClass="MenuItemLayoutStyle" Clicked="OnAnimalsClicked">
     </MenuItem>
-    <MenuItem Text="Bedding" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    <MenuItem Text="Bedding" StyleClass="MenuItemLayoutStyle" Clicked="OnBeddingClicked">
     </MenuItem>
-    <MenuItem Text="Minerals" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    <MenuItem Text="Minerals" StyleClass="MenuItemLayoutStyle" Clicked="OnMineralsClicked">
     </MenuItem>
 
     <!--
