@@ -41,5 +41,9 @@ namespace RanchApp
         {
             await Shell.Current.GoToAsync(nameof(WorkWithAnimalsPage));
         }
+                private async void AnimalInventoryClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(MainPage));
+        }
     }
 }

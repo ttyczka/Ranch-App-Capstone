@@ -8,23 +8,33 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Padding="10,20">
             <StackLayout>
-                <Label Text="Name:"></Label>
-                <Label Text="PRODUCT NAME"></Label>
+                <Label Text="WORK WITH ANIMALS"></Label>
+                <Label Text="Species"></Label>
+                <Picker x:Name="picker"
+             Title="Select an Animal"
+               TitleColor="Red">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Cow</x:String>
+                            <x:String>Pig</x:String>
+                            <x:String>Sheep</x:String>
+                            <x:String>Bull</x:String>
+                            <x:String>Calf</x:String>
+                            <x:String>Chicken</x:String>
+                            <x:String>Chick</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
             </StackLayout>
+           
 
-            <StackLayout Orientation="Vertical">
-                <Label Text="Description:"></Label>
-                <Label Text="PRODUCT DESCRIPTIONPRODUCT DESCRIPTIONPRODUCT DESCRIPTIONPRODUCT DESCRIPTIONPRODUCT DESCRIPTIONPRODUCT DESCRIPTION"></Label>
-            </StackLayout>
 
-            
             <RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-                <Button Text="Order" x:Name="orderBtn"
+                <Label Text="Description:"></Label>
+                <Button Text="Submit" x:Name="WorkWithAnimalsBtn"
                         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.25}"
                         ></Button>
-                <Button Text="Favorite"
-                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=orderBtn, Property=X, Constant=100}"
-                        ></Button>
+                
             </RelativeLayout>
         </StackLayout>
     </ContentPage.Content>
