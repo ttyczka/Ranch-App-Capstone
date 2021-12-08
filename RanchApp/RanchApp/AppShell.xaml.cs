@@ -11,15 +11,18 @@ namespace RanchApp
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
+           
+            Routing.RegisterRoute(nameof(WorkWithAnimalsPage), typeof(WorkWithAnimalsPage));
+            Routing.RegisterRoute(nameof(AnimalInventoryPage), typeof(AnimalInventoryPage)); 
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
             Routing.RegisterRoute(nameof(WorkWithAnimalsPage), typeof(WorkWithAnimalsPage));
+            Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
         }
 
-        private async void OnLoginMenuItemClicked(object sender, EventArgs e)
+        private async void OnAnimalInventoryClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync(nameof(LoginPage));
+            await Shell.Current.GoToAsync(nameof(AnimalInventoryPage));
         }
         private async void OnWorkWithAnimalsMenuItemClicked(object sender, EventArgs e)
         {
@@ -41,9 +44,10 @@ namespace RanchApp
         {
             await Shell.Current.GoToAsync(nameof(WorkWithAnimalsPage));
         }
-                private async void AnimalInventoryClicked(object sender, EventArgs e)
+                private async void OnAnimalInventory2Clicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync(nameof(MainPage));
+
         }
     }
 }
