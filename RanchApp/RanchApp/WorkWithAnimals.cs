@@ -8,7 +8,7 @@ namespace RanchApp
     public class WorkWithAnimals
     {
         [PrimaryKey, AutoIncrement]
-        public int WorkId { get; set; }
+        public int workId { get; set; }
         public string workDate { get; set; }
         public string workAction { get; set; }
         public string workMaterialsUsed { get; set; }

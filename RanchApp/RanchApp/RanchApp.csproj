@@ -6,20 +6,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Fonts\times_new_roman.ttf" />
+    <None Remove="Resources\Fonts\times_new_roman_bold.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\times_new_roman.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\times_new_roman_bold.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\EquipmentInventoryPage.xaml.cs">
+      <DependentUpon>EquipmentInventoryPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\Checkin.xaml.cs">
-      <DependentUpon>Checkin.xaml</DependentUpon>
+    <Compile Update="Views\CheckinPage.xaml.cs">
+      <DependentUpon>CheckinPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\WorkWithAnimalsPage.xaml.cs">
       <DependentUpon>WorkWithAnimalsPage.xaml</DependentUpon>
@@ -27,16 +40,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Images.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="Views\AnimalInventoryPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\BeenFed.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\EquipmentInventory.xaml">
+    <EmbeddedResource Update="Views\EquipmentInventoryPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\FeedInventory.xaml">
@@ -48,7 +58,7 @@
     <EmbeddedResource Update="Views\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Checkin.xaml">
+    <EmbeddedResource Update="Views\CheckinPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\MainPage.xaml">
@@ -58,6 +68,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\WorkWithAnimalsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="work.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

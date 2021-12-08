@@ -4,32 +4,34 @@
              x:Class="RanchApp.AnimalInventoryPage">
     <StackLayout Margin="20,35,20,20">
         <Label Text="Animal Inventory"
-               TextColor="Green"
-               FontSize="Title"
+               TextColor="Black"
+               FontSize="40"
                FontAttributes="Bold">
         </Label>
+        <Line Stroke="Green"
+              X1="200"/>
         <Entry x:Name="animalNameEntry"
-               Placeholder="Enter the Animal's Tag" />
+               Placeholder="Enter the Animal's Tag" FontFamily="times_new_roman" />
             <Entry x:Name="animalTagEntry"
-               Placeholder="Enter the Animal's Name" />
+               Placeholder="Enter the Animal's Name" FontFamily="times_new_roman" />
             <Entry x:Name="animalSpeciesEntry"
-               Placeholder="Enter the Animal's Species" />
+               Placeholder="Enter the Animal's Species" FontFamily="times_new_roman"/>
             <Entry x:Name="animalBreedEntry"
-               Placeholder="Enter the Animal's Breed" />
+               Placeholder="Enter the Animal's Breed" FontFamily="times_new_roman"/>
             <Entry x:Name="animalSexEntry"
-               Placeholder="Enter the Animal's Sex" />
+               Placeholder="Enter the Animal's Sex" FontFamily="times_new_roman"/>
             <Entry x:Name="animalArivalDateEntry"
-               Placeholder="Enter the Animal's Arival Date" />
+               Placeholder="Enter the Animal's Arrival Date" FontFamily="times_new_roman"/>
             <Entry x:Name="animalPhotoEntry"
-               Placeholder="Upload the Animal's Photo" />
-            <Button Text="Add to Database"
-                Clicked="OnButtonClicked" />
+               Placeholder="Upload the Animal's Photo" FontFamily="times_new_roman"/>
+        <Button Text="Add to Database" BackgroundColor="#540B0C"
+                Clicked="OnButtonClicked" FontFamily="times_new_roman_bold"/>
             <CollectionView x:Name="collectionView">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout>
                             <Label Text="{Binding animalName}"
-                               TextColor="Navy"
+                               TextColor="#540B0C"
                                FontSize="Medium" />
                             <Label Text="{Binding animalTag}"
                                TextColor="SlateGray"

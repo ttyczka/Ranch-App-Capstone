@@ -12,11 +12,12 @@ namespace RanchApp
         {
             InitializeComponent();
            
+            
+            Routing.RegisterRoute(nameof(AnimalInventoryPage), typeof(AnimalInventoryPage));
             Routing.RegisterRoute(nameof(WorkWithAnimalsPage), typeof(WorkWithAnimalsPage));
-            Routing.RegisterRoute(nameof(AnimalInventoryPage), typeof(AnimalInventoryPage)); 
-            Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+            Routing.RegisterRoute(nameof(CheckinPage), typeof(CheckinPage));
             Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
-            Routing.RegisterRoute(nameof(WorkWithAnimalsPage), typeof(WorkWithAnimalsPage));
+            
             Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
         }
 
@@ -24,13 +25,13 @@ namespace RanchApp
         {
             await Shell.Current.GoToAsync(nameof(AnimalInventoryPage));
         }
-        private async void OnWorkWithAnimalsMenuItemClicked(object sender, EventArgs e)
+        private async void OnWorkWithAnimalsClicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync(nameof(WorkWithAnimalsPage));
         }
-        private async void OnAnimalsClicked(object sender, EventArgs e)
+        private async void OnCheckinClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync(nameof(ItemDetailPage));
+            await Shell.Current.GoToAsync(nameof(CheckinPage));
         }
         private async void OnBeddingClicked(object sender, EventArgs e)
         {
@@ -40,10 +41,7 @@ namespace RanchApp
         {
             await Shell.Current.GoToAsync(nameof(WorkWithAnimalsPage));
         }
-        private async void OnWhoHasBeenFedClicked(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync(nameof(WorkWithAnimalsPage));
-        }
+     
                 private async void OnAnimalInventory2Clicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync(nameof(MainPage));

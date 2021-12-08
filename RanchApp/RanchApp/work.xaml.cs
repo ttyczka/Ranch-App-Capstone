@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace RanchApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Images : ContentPage
+    public partial class work : ContentPage
     {
-        public Images()
+        public work()
         {
             InitializeComponent();
         }

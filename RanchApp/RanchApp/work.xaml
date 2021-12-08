@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RanchApp.work">
+    <ContentPage.Content>
+        
+            <StackLayout Orientation="Vertical" Padding="10,20">
+                <StackLayout>
+                    <Label Text="WORK WITH ANIMALS"></Label>
+                    <Label Text="Species"></Label>
+                    <Picker x:Name="picker"
+             Title="Select an Animal"
+               TitleColor="Red">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Cow</x:String>
+                                <x:String>Pig</x:String>
+                                <x:String>Sheep</x:String>
+                                <x:String>Bull</x:String>
+                                <x:String>Calf</x:String>
+                                <x:String>Chicken</x:String>
+                                <x:String>Chick</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </StackLayout>
+
+
+
+                <RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                    <Label Text="Description:"></Label>
+                    <Button Text="Submit" x:Name="WorkWithAnimalsBtn"
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.25}"
+                        ></Button>
+
+                </RelativeLayout>
+            </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -148,4 +148,10 @@
       <Name>RanchApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Gumbi350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\home_icon.png" />
+  </ItemGroup>
 </Project>

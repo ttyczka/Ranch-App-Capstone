@@ -15,7 +15,9 @@
 
     <Shell.Resources>
         <ResourceDictionary>
-            
+            <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="times_new_roman_bold"/>
+            </Style>
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="DarkGreen" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
@@ -32,6 +34,7 @@
             https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#flyoutitem-and-menuitem-style-classes
             -->
             <Style Class="FlyoutItemLabelStyle" TargetType="Label">
+                <Setter Property="FontFamily" Value="Trashtalk" />
                 <Setter Property="TextColor" Value="White"></Setter>
             </Style>
             <Style Class="FlyoutItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
@@ -87,11 +90,9 @@ Green" />
 
     <MenuItem Text="Animal Inventory" StyleClass="MenuItemLayoutStyle" Clicked="OnAnimalInventoryClicked">
     </MenuItem>
-    <MenuItem Text="Work With Animals" StyleClass="MenuItemLayoutStyle" Clicked="OnWorkWithAnimalsMenuItemClicked">
+    <MenuItem Text="Work With Animals" StyleClass="MenuItemLayoutStyle" Clicked="OnWorkWithAnimalsClicked">
     </MenuItem>
-    <MenuItem Text="Who Has Been Fed" StyleClass="MenuItemLayoutStyle" Clicked="OnWhoHasBeenFedClicked">
-    </MenuItem>
-    <MenuItem Text="Animals" StyleClass="MenuItemLayoutStyle" Clicked="OnAnimalsClicked">
+    <MenuItem Text="Checkin" StyleClass="MenuItemLayoutStyle" Clicked="OnCheckinClicked">
     </MenuItem>
     <MenuItem Text="Bedding" StyleClass="MenuItemLayoutStyle" Clicked="OnBeddingClicked">
     </MenuItem>

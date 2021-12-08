@@ -5,6 +5,9 @@ using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("times_new_roman.ttf")]
+[assembly: ExportFont("times_new_roman_bold.ttf")]
+
 namespace RanchApp
 {
     public partial class App : Application

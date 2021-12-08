@@ -1,37 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RanchApp.WorkWithAnimalsPage">
+             x:Class="RanchApp.CheckinPage">
     <StackLayout Margin="20,35,20,20">
-        <Label Text="Work With Animals"
+        <Label Text="Check In"
                TextColor="Black"
                FontSize="40"
                FontAttributes="Bold">
         </Label>
         <Line Stroke="Green"
               X1="200"/>
-        <Entry x:Name="workDateEntry"
+        <Entry x:Name="empNameEntry"
+               Placeholder="Full Name" FontFamily="times_new_roman" />
+        <Entry x:Name="empDateEntry"
                Placeholder="DATE" FontFamily="times_new_roman" />
-        <Entry x:Name="workActionEntry"
-               Placeholder="Action" FontFamily="times_new_roman" />
-        <Entry x:Name="workMaterialsEntry"
-               Placeholder="Materials Used" FontFamily="times_new_roman"/>
-        <Entry x:Name="workQuantity"
-               Placeholder="Quantity" FontFamily="times_new_roman"/>
-        <Entry x:Name="workUnit"
-               Placeholder="Units Used" FontFamily="times_new_roman"/>
-        <Entry x:Name="workComments"
-               Placeholder="Additional Comments" FontFamily="times_new_roman"/>
+        <Entry x:Name="empStartTimeEntry"
+               Placeholder="Start Time (00:00)" FontFamily="times_new_roman"/>
+        <Entry x:Name="empEndTimeEntry"
+               Placeholder="End Time (00:00)" FontFamily="times_new_roman"/>
+        
         <Button Text="Add to Database" BackgroundColor="#540B0C"
                 Clicked="OnButtonClicked" FontFamily="times_new_roman_bold"/>
         <CollectionView x:Name="collectionView">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout>
-                        <Label Text="{Binding workAction}"
+                        <Label Text="{Binding empName}"
                                TextColor="#540B0C"
                                FontSize="Medium" />
-                        <Label Text="{Binding workDate}"
+                        <Label Text="{Binding empDate}"
                                TextColor="SlateGray"
                                FontSize="Medium" />
                     </StackLayout>
@@ -39,6 +36,4 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
     </StackLayout>
-    
-
 </ContentPage>
