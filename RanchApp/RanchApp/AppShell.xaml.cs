@@ -16,7 +16,7 @@ namespace RanchApp
             Routing.RegisterRoute(nameof(AnimalInventoryPage), typeof(AnimalInventoryPage));
             Routing.RegisterRoute(nameof(WorkWithAnimalsPage), typeof(WorkWithAnimalsPage));
             Routing.RegisterRoute(nameof(CheckinPage), typeof(CheckinPage));
-            Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
+           
             
             Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
         }

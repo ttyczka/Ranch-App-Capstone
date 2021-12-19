@@ -28,7 +28,12 @@ namespace RanchApp
                 await App.Database.SaveWorkWithAnimalsAsync(new WorkWithAnimals
                 {
                     workAction = workActionEntry.Text,
-                    workDate = workDateEntry.Text
+                    workDate = workDateEntry.Text,
+                    workMaterialsUsed = workMaterialsEntry.Text,
+                    workQuantity = workQuantity.Text,
+                    workUnit = workUnit.Text,
+                    workComments = workComments.Text
+                    
                 });
 
                 workActionEntry.Text = workDateEntry.Text = string.Empty;
