@@ -33,19 +33,7 @@ namespace RanchApp
         {
             await Shell.Current.GoToAsync(nameof(CheckinPage));
         }
-        private async void OnBeddingClicked(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync(nameof(WorkWithAnimalsPage));
-        }
-        private async void OnMineralsClicked(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync(nameof(WorkWithAnimalsPage));
-        }
-     
-                private async void OnAnimalInventory2Clicked(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync(nameof(MainPage));
-
-        }
+       
+                
     }
 }
